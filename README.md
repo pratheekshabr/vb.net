@@ -318,31 +318,31 @@ namespace Exercises <br>
 <br>
 
  
- 8. C# Program to Find the Frequency of the Word ʺisʺ in a given Sentence. 
-using System; 
-namespace Exercises 
-{ 
-class FrequencyIS 
-{ 
-static void Main(string[] args) 
-{ 
-int count=0; 
-string inputString; 
-Console.WriteLine("\n----------- Frequency of word 'is' ----------"); 
-Console.Write("\n Enter the input string: "); 
-inputString = Console.ReadLine(); 
-char[] separator = { ',', ' ', '.' , '!', '\n' }; 
-string testString = inputString.ToLower(); 
-String[] outcomes = testString.Split(separator); 
-foreach(String s in outcomes) 
-{ 
-Console.WriteLine(s); 
-if(s == "is") 
-count++; 
+ 8. C# Program to Find the Frequency of the Word ʺisʺ in a given Sentence. <br>
+using System;<br> 
+namespace Exercises <br>
+{ <br>
+class FrequencyIS <br>
+{ <br>
+static void Main(string[] args) <br>
+{ <br>
+int count=0;<br>
+string inputString; <br>
+Console.WriteLine("\n----------- Frequency of word 'is' ----------"); <br>
+Console.Write("\n Enter the input string: "); <br>
+inputString = Console.ReadLine(); <br>
+char[] separator = { ',', ' ', '.' , '!', '\n' }; <br>
+string testString = inputString.ToLower(); <br>
+String[] outcomes = testString.Split(separator); <br>
+foreach(String s in outcomes) <br>
+{ <br>
+Console.WriteLine(s); <br>
+if(s == "is") <br>
+count++; <br>
 } 
-Console.WriteLine("\n Number of 'is' in '" + inputString + "' is: " + count); } 
-} 
-}
+Console.WriteLine("\n Number of 'is' in '" + inputString + "' is: " + count); }<br> 
+} <br>
+}<br>
 
 
 Output:<br>
