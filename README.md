@@ -25,7 +25,7 @@ namespace Exercises <br>
  } <br>
  } <br>
 } <br>
-output:
+output:<br>
 
 ![image](https://user-images.githubusercontent.com/97940277/154424310-683c4e72-1d56-42de-8157-6305eb621de2.png)<br>
 
@@ -67,8 +67,8 @@ namespace Exercises <br>
  } <br>
 }<br>
 
-Output:
-![image](https://user-images.githubusercontent.com/97940277/154425770-736ffae1-e0b1-47bb-9302-dc3bb7b0f174.png)
+Output:<br>
+![image](https://user-images.githubusercontent.com/97940277/154425770-736ffae1-e0b1-47bb-9302-dc3bb7b0f174.png)<br>
 
 3. C# Program to Illustrate Multilevel Inheritance with Virtual Methods  (displaying student details). <br>
 using System; <br>
