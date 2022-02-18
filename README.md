@@ -174,7 +174,7 @@ else <br>
  } <br>
  } <br>
 }<br>
-output:
+output:<br>
 ![Screenshot (2)](https://user-images.githubusercontent.com/97940277/154626095-6285ac41-c5d1-43f9-b32f-4633d2e02030.png)<br>
 
 4. C# Program to Create a Gray Code.<br>
@@ -313,6 +313,10 @@ namespace Exercises <br>
  } <br>
  } <br>
 } <br>
+ Output:<br>
+ ![Screenshot (11)](https://user-images.githubusercontent.com/97940277/154634643-d5f0df4c-099a-438c-958b-b7b58cd0741a.png)![Screenshot (12)](https://user-images.githubusercontent.com/97940277/154634798-467fda08-180c-4240-bce2-37ef552d001f.png)
+<br>
+
 
 
 
