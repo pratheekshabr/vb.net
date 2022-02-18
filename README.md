@@ -389,7 +389,7 @@ namespace Exercises<br>
             }<br>
             StopwatchJagged.Stop();<br>
 
-        Console.Write("\n Time taken for allocation in case of 2D array: "); <br>
+ Console.Write("\n Time taken for allocation in case of 2D array: "); <br>
  Console.WriteLine(Stopwatch2D.Elapsed.TotalMilliseconds + " milliseconds");<br>
  Console.Write("\n Time taken for allocation in case of Jagged array: ");  <br>
  Console.WriteLine(StopwatchJagged.Elapsed.TotalMilliseconds + " milliseconds");  } <br>
