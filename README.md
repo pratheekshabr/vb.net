@@ -317,6 +317,35 @@ namespace Exercises <br>
  ![Screenshot (11)](https://user-images.githubusercontent.com/97940277/154634643-d5f0df4c-099a-438c-958b-b7b58cd0741a.png)![Screenshot (12)](https://user-images.githubusercontent.com/97940277/154634798-467fda08-180c-4240-bce2-37ef552d001f.png)
 <br>
 
+ 
+ 8. C# Program to Find the Frequency of the Word ʺisʺ in a given Sentence. 
+using System; 
+namespace Exercises 
+{ 
+class FrequencyIS 
+{ 
+static void Main(string[] args) 
+{ 
+int count=0; 
+string inputString; 
+Console.WriteLine("\n----------- Frequency of word 'is' ----------"); 
+Console.Write("\n Enter the input string: "); 
+inputString = Console.ReadLine(); 
+char[] separator = { ',', ' ', '.' , '!', '\n' }; 
+string testString = inputString.ToLower(); 
+String[] outcomes = testString.Split(separator); 
+foreach(String s in outcomes) 
+{ 
+Console.WriteLine(s); 
+if(s == "is") 
+count++; 
+} 
+Console.WriteLine("\n Number of 'is' in '" + inputString + "' is: " + count); } 
+} 
+}
 
+
+Output:<br>
+ ![Screenshot (14)](https://user-images.githubusercontent.com/97940277/154635459-86a50bf4-1669-4cd4-89c0-9478c1b3ee1f.png)
 
 
