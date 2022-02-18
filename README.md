@@ -97,79 +97,83 @@ namespace Exercises<br>
  { <br>
  int regNo;<br> 
  string course;<br> 
- int semester; 
- public CourseDetails(string name, int age, string gender, int regNo, string course, int semester)  : base(name, age, gender) 
- { 
- this.regNo = regNo; 
- this.course = course; 
- this.semester = semester; 
- } 
- public override void Display() 
- { 
- base.Display(); 
- Console.WriteLine("\n-------- COURSE DETAILS --------\n");
-.NET TECHNOLOGY LAB 4 
- Console.WriteLine("Register Number : " + regNo); 
- Console.WriteLine("Course : " + course); 
- Console.WriteLine("Semester : " + semester); 
- } 
- } 
- class MarksDetails : CourseDetails 
- { 
- int[] marks = new int[5]; 
- int total; 
- float average; 
- string grade; 
- int flagFail; 
- public MarksDetails(string name, int age, string gender, int regNo, string course, int semester,  int[] marks) : base(name, age, gender, regNo, course, semester) 
- { 
- total = 0; 
- for(int i=0; i<5; i++) 
- { 
- this.marks[i] = marks[i]; 
- total += marks[i]; 
- if(marks[i]<35) 
- { 
- flagFail = 1; 
- } 
- } 
- Calculate(); 
- } 
- private void Calculate() 
- { 
- average = total/5; 
- if(flagFail == 1 || average<40) 
- grade = "Fail"; 
- else if(average>=70) 
- grade = "Distinction"; 
- else if(average>=60) 
- grade = "First Class"; 
- else if(average>=50) 
- grade = "Second Class"; 
+ int semester; <br>
+ public CourseDetails(string name, int age, string gender, int regNo, string course, int semester)  : base(name, age, gender) <br>
+ { <br>
+ this.regNo = regNo; <br>
+ this.course = course; <br>
+ this.semester = semester<br>; 
+ } <br>
+ public override void Display()<br> 
+ { <br>
+ base.Display(); <br>
+ Console.WriteLine("\n-------- COURSE DETAILS --------\n");<br>
+
+ Console.WriteLine("Register Number : " + regNo); <br>
+ Console.WriteLine("Course : " + course); <br>
+ Console.WriteLine("Semester : " + semester); <br>
+ } <br>
+ } <br>
+ class MarksDetails : CourseDetails<br> 
+ { <br>
+ int[] marks = new int[5];<br> 
+ int total; <br>
+ float average;<br> 
+ string grade; <br>
+ int flagFail; <br>
+ public MarksDetails(string name, int age, string gender, int regNo, string course, int semester,  int[] marks) : base(name, age, gender, regNo, course, semester) <br>
+ { <br>
+ total = 0; <br>
+ for(int i=0; i<5; i++) <br>
+ { <br>
+ this.marks[i] = marks[i]; <br>
+ total += marks[i]; <br>
+ if(marks[i]<35) <br>
+ { <br>
+ flagFail = 1; <br>
+ } <br>
+ } <br>
+ Calculate(); <br>
+ } <br>
+ private void Calculate()<br> 
+ { <br>
+ average = total/5; <br>
+ if(flagFail == 1 || average<40) <br>
+ grade = "Fail"; <br>
+ else if(average>=70) <br>
+ grade = "Distinction"; <br>
+ else if(average>=60) <br>
+ grade = "First Class"; <br>
+ else if(average>=50) <br>
+ grade = "Second Class"; <br>
  
-.NET TECHNOLOGY LAB 5 
-else 
- grade = "Pass Class"; 
- } 
- public override void Display() 
- { 
- base.Display(); 
- Console.WriteLine("\n-------- MARKS DETAILS --------\n"); 
- Console.Write("Marks in 5 subjects: "); 
- for(int i=0; i<5; i++) 
- Console.Write(marks[i] + " "); 
- Console.WriteLine(); 
- Console.WriteLine("Total : " + total); 
- Console.WriteLine("Average : " + average); 
- Console.WriteLine("Grade : " + grade); 
- } 
- } 
- class MultiLevel 
- { 
- public static void Main(string[] args) 
- { 
- MarksDetails Student1 = new MarksDetails("Abhijith", 22, "Male", 20190001, "MCA", 5,  new int[]{77,80,98,95,90}); 
- Student1.Display(); 
- } 
- } 
-}
+
+else <br>
+ grade = "Pass Class";<br> 
+ } <br>
+ public override void Display() <br>
+ { <br>
+ base.Display(); <br>
+ Console.WriteLine("\n-------- MARKS DETAILS --------\n"); <br>
+ Console.Write("Marks in 5 subjects: "); <br>
+ for(int i=0; i<5; i++) <br>
+ Console.Write(marks[i] + " <br>
+ Console.Write<br>
+ Console.WriteLine("Total : " + total); <br>
+ 
+ Console.WriteLine("Average : " + average); <br>
+ Console.WriteLine("Grade : " + grade); <br>
+ } <br>
+ } <br>
+ class MultiLevel <br>
+ { <br>
+ public static void Main(string[] args) <br>
+ { <br>
+ MarksDetails Student1 = new MarksDetails("Abhijith", 22, "Male", 20190001, "MCA", 5,  new int[]{77,80,98,95,90}); <br>
+ Student1.Display(); <br>
+ } <br>
+ } <br>
+}<br>
+output:
+![image](https://user-images.githubusercontent.com/97940277/154625292-d90521aa-d45e-4247-846f-b5cb30fff977.png)
+
