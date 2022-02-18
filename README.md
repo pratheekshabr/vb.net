@@ -245,5 +245,47 @@ namespace Exercises<br>
 }<br>
 
 Output:<br>
-![Screenshot (6)](https://user-images.githubusercontent.com/97940277/154629462-8db67286-8206-4499-a9f4-332a2a467ab8.png)
+![Screenshot (6)](https://user-images.githubusercontent.com/97940277/154629462-8db67286-8206-4499-a9f4-332a2a467ab8.png)<br>
+
+6. C# Program to Implement Principles of Delegates (converting input string to  uppercase first, last and entire string). 
+using System; <br>
+namespace Exercises <br>
+{ <br>
+ class Delegates<br><br> 
+ { <br>
+ delegate string UppercaseDelegate(string input); <br>
+ static string UppercaseFirst(string input)<br> 
+ { <br>
+ char[] buffer = input.ToCharArray(); <br>
+ buffer[0] = char.ToUpper(buffer[0]); <br>
+ return new string(buffer); <br>
+ } <br>
+ static string UppercaseLast(string input) <br>
+ { <br>
+ char[] buffer = input.ToCharArray(); <br>
+ buffer[buffer.Length - 1] = char.ToUpper(buffer[buffer.Length - 1]);  return new string(buffer); <br>
+ } <br>
+ static string UppercaseAll(string input) <br>
+ { <br>
+ return input.ToUpper(); <br>
+ } <br>
+ static void WriteOutput(string input, UppercaseDelegate del) <br>
+ { <br>
+ Console.WriteLine("Input String: {0}", input); <br>
+ Console.WriteLine("Output String: {0}", del(input)); <br>
+ } <br>
+ static void Main() <br>
+ { <br>
+ WriteOutput("tom ", new UppercaseDelegate(UppercaseFirst)); <br>
+ WriteOutput("tom", new UppercaseDelegate(UppercaseLast)); <br>
+ WriteOutput("tom", new UppercaseDelegate(UppercaseAll)); <br>
+ Console.ReadLine(); <br>
+ } <br>
+ } <br>
+}<br>
+
+Output:<BR>
+ ![Screenshot (8)](https://user-images.githubusercontent.com/97940277/154631240-41ca6a79-7405-492b-92fa-a0480c9c1587.png)
+
+
 
