@@ -175,4 +175,32 @@ else <br>
  } <br>
 }<br>
 output:
-![Screenshot (2)](https://user-images.githubusercontent.com/97940277/154626095-6285ac41-c5d1-43f9-b32f-4633d2e02030.png)
+![Screenshot (2)](https://user-images.githubusercontent.com/97940277/154626095-6285ac41-c5d1-43f9-b32f-4633d2e02030.png)<br>
+
+4. C# Program to Create a Gray Code.<br>
+using System; <br>
+namespace Exercises <br>
+{ <br>
+ class GrayCode <br>
+ { <br>
+  
+ static int getGray(int n) <br>
+ { <br>
+ return n^(n>>1); <br>
+ } <br>
+ static void Main(string[] args) <br>
+ { <br>
+ int InputNum, GrayNum; <br>
+ Console.Write("\nEnter the decimal number: "); <br>
+ InputNum = Convert.ToInt32(Console.ReadLine()); <br>
+ Console.WriteLine("\nBinary equivalent of {0}: {1}", InputNum,  Convert.ToString(InputNum, 2)); <br>
+ GrayNum = getGray(InputNum); <br>
+ Console.WriteLine("\nGray Code equivalent of {0}: {1}", InputNum,  Convert.ToString(GrayNum, 2)); <br>
+ } <br>
+ } <br>
+} <br>
+
+Output:<br>
+![Screenshot (4)](https://user-images.githubusercontent.com/97940277/154628717-e1674fe3-eb2f-4265-80ca-84070f18b137.png)
+
+
