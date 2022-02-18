@@ -244,6 +244,6 @@ namespace Exercises<br>
     }<br>
 }<br>
 
-Output:
+Output:<br>
 ![Screenshot (6)](https://user-images.githubusercontent.com/97940277/154629462-8db67286-8206-4499-a9f4-332a2a467ab8.png)
 
