@@ -285,7 +285,34 @@ namespace Exercises <br>
 }<br>
 
 Output:<BR>
- ![Screenshot (8)](https://user-images.githubusercontent.com/97940277/154631240-41ca6a79-7405-492b-92fa-a0480c9c1587.png)
+ ![Screenshot (8)](https://user-images.githubusercontent.com/97940277/154631240-41ca6a79-7405-492b-92fa-a0480c9c1587.png)<br>
+
+ 7. C# Program to Generate Register Number automatically for 100 Students  using Static Constructor. <br>
+using System; <br>
+namespace Exercises <br>
+{ <br>
+ class RegisterNum <br>
+ { <br>
+ int regNo; <br>
+ static int startNum;<br> 
+ static RegisterNum() <br>
+ { <br>
+ startNum = 20210000; <br>
+ } <br>
+ RegisterNum()<br> 
+ { <br>
+ regNo = ++startNum; <br>
+ } <br>
+ public static void Main(string[] args) <br>
+ { <br>
+ for(int i = 0; i<100; i++) <br>
+ { <br>
+ RegisterNum Student = new RegisterNum(); <br>
+ Console.WriteLine("Student {0} : {1}", i+1, Student.regNo);<br> 
+ } <br>
+ } <br>
+ } <br>
+} <br>
 
 
 
