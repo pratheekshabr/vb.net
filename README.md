@@ -175,5 +175,4 @@ else <br>
  } <br>
 }<br>
 output:
-![image](https://user-images.githubusercontent.com/97940277/154625292-d90521aa-d45e-4247-846f-b5cb30fff977.png)
-
+![Screenshot (2)](https://user-images.githubusercontent.com/97940277/154626095-6285ac41-c5d1-43f9-b32f-4633d2e02030.png)
