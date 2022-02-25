@@ -448,4 +448,28 @@ namespace Exercises <br>
  
  Output:<br>
  *********<br>
+ **************
+ 11.FibonacciExample<br>
+ ************
+using System;<br>
+public class FibonacciExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n1 = 0, n2 = 1, n3, i, number;<br>
+        Console.Write("Enter the number of elements: ");<br>
+        number = int.Parse(Console.ReadLine());<br>
+        Console.Write(n1 + " " + n2 + " "); //printing 0 and 1    <br>
+        for (i = 2; i < number; ++i) //loop starts from 2 because 0 and 1 are already printed    <br><br><br>
+        {<br>
+            n3 = n1 + n2;<br><br>
+            Console.Write(n3 + " ");<br>
+            n1 = n2;<br><br>
+            n2 = n3;<br><br>
+        }<br>
+    }<br>
+}<br>
  
+ Output:<br>
+ *********<br>
+ ![Screenshot (28)](https://user-images.githubusercontent.com/97940277/155659464-49587883-cf56-4664-b414-03e21626deac.png)<br>
