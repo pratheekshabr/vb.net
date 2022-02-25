@@ -464,7 +464,7 @@ public class FibonacciExample<br>
         {<br>
             n3 = n1 + n2;<br><br>
             Console.Write(n3 + " ");<br>
-            n1 = n2;<br><br>
+            n1 = n2;<br>
             n2 = n3;<br><br>
         }<br>
     }<br>
@@ -473,3 +473,33 @@ public class FibonacciExample<br>
  Output:<br>
  *********<br>
  ![Screenshot (28)](https://user-images.githubusercontent.com/97940277/155659464-49587883-cf56-4664-b414-03e21626deac.png)<br>
+ ***************
+ 12.Write a C# program to check prime numbers<br>
+ *************
+ using System;  <br>
+  public class PrimeNumberExample  <br>
+   {  <br>
+     public static void Main(string[] args)  <br>
+      {  <br>
+          int n, i, m=0, flag=0;    <br>
+          Console.Write("Enter the Number to check Prime: ");    <br>
+          n = int.Parse(Console.ReadLine());  <br>
+          m=n/2;   <br> 
+          for(i = 2; i <= m; i++)    <br>
+          {    <br><br>
+           if(n % i == 0)    <br>
+            {    <br>
+             Console.Write("Number is not Prime.");    <br>
+             flag=1;    <br>
+             break;    <br>
+            }    <br>
+          }    <br>
+          if (flag==0)    <br>
+           Console.Write("Number is Prime.");   <br>    
+     }  <br>
+   }  <br>
+ Output:<br>
+ *********
+ ![Screenshot (31)](https://user-images.githubusercontent.com/97940277/155660113-a46bbce0-b6cf-47af-bc35-8d2e318006a1.png)<br>
+ ![Screenshot (32)](https://user-images.githubusercontent.com/97940277/155660237-cc79a25c-08b1-4389-9546-402f406d5dba.png)<br>
+
