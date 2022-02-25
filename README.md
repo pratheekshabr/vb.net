@@ -398,5 +398,54 @@ namespace Exercises<br>
                             
  Output:<br><br>
  ![Screenshot (16)](https://user-images.githubusercontent.com/97940277/154636652-e0ddfc0e-52db-4442-9000-3c2bb79673e9.png)<br>
+*****************
+10.
+ *****************
+ System; <br>
+namespace Exercises <br>
+{ <br 
+ class SumOfDiagonals <br>
+ { <br>
+ static void Main(string[] args) <br>
+ { <br>
+ int MaxRow, MaxCol, Sum=0;<br> 
+ int[,] Matrix; <br>
+ Console.WriteLine("\n---------- SUM OF DIAGONAL OF A MATRIX ----------\n");  Console.Write("\nEnter the number of rows: "); <br><br>
+ MaxRow = Convert.ToInt32(Console.ReadLine()); <br>
+ Console.Write("\nEnter the number of columns: "); <br>
+ MaxCol = Convert.ToInt32(Console.ReadLine()); <br>
+ if(MaxRow != MaxCol) <br>
 
-
+ { <br>
+ Console.WriteLine("\nThe Dimensions entered are not of Square Matrix.");  Console.WriteLine("\nExiting the Program.."); <br>
+ return; <br>
+ } <br>
+ Matrix = new int[MaxRow, MaxCol]; <br>
+ for(int i=0; i<MaxRow; i++)  <br>
+ {  <br>
+ for(int j=0; j<MaxCol; j++)  <br>
+ { 
+ Console.Write("\nEnter the ({0},{1})th element of the matrix: ", (i+1), (j+1));  Matrix[i, j] = Convert.ToInt32(Console.ReadLine());  <br>
+ }  <br> <br>
+ }  <br>
+ Console.WriteLine("\nThe entered Matrix is: ");  <br>
+ for(int i=0; i<MaxRow; i++)  <br>
+ {  <br>
+ for(int j=0; j<MaxCol; j++)  <br>
+ {  <br>
+ Console.Write(" " + Matrix[i, j]);  <br>
+ if( i == j)  <br>
+ {  <br>
+ Sum += Matrix[i,j];  <br>
+ }  <br>
+ }  <br>
+ Console.WriteLine();  <br>
+ } <br>
+ Console.WriteLine("\nThe Sum of Diagonal is " + Sum);  <br>
+ }  <br>
+ }  <br>
+}  <br>
+ 
+ Output:<br>
+ *********<br>
+ 
