@@ -575,6 +575,13 @@ public class ArmstrongExample<br>
             Console.Write("Not Armstrong Number.");<br>
     }<br>
 }<br>
+ Output:
+ *******<br>
+ ![Screenshot (53)](https://user-images.githubusercontent.com/97940277/156501614-412927f2-e375-416d-b9e2-97f49d9e266a.png)<br>
+ ![Screenshot (54)](https://user-images.githubusercontent.com/97940277/156501695-e572450f-21a6-4b97-86d2-3037f5afd2a1.png)<br>
+
+
+ 
 
 
 
