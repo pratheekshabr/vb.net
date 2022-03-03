@@ -529,6 +529,29 @@ public class FibonacciExample<br>
 Output:<br>
  ![Screenshot (47)](https://user-images.githubusercontent.com/97940277/156499661-a3b106d6-c3ae-489d-b386-4111747b6985.png)<br>
  ![Screenshot (48)](https://user-images.githubusercontent.com/97940277/156499692-3b2488e1-b9af-4377-b8db-0bc30940f56e.png)<br>
+*****************************
+ 14.Write a C# program to check factorial of a number<br>
+ ****************************
+ using System;<br>
+public class FactorialExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int i, fact = 1, number;<br>
+        Console.Write("Enter any Number: ");<br>
+        number = int.Parse(Console.ReadLine());<br>
+        for (i = 1; i <= number; i++)<br>
+        {<br>
+            fact = fact * i;<br>
+        }<br>
+        Console.Write("Factorial of " + number + " is: " + fact);<br>
+    }<br>
+}<br>
+ 
+ Output:<br>
+ **********
+ ![Screenshot (50)](https://user-images.githubusercontent.com/97940277/156500547-80ae57bf-afcd-4cff-a84d-ef8b562f0b0e.png)<br>
+
 
 
 
