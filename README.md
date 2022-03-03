@@ -549,8 +549,10 @@ public class FactorialExample<br>
 }<br>
  
  Output:<br>
- **********
+ **********<br>
  ![Screenshot (50)](https://user-images.githubusercontent.com/97940277/156500547-80ae57bf-afcd-4cff-a84d-ef8b562f0b0e.png) <br>
+
+ 
  *******************
  15.Write a C# program to check amstrong number.<br>
  *******************
@@ -575,7 +577,7 @@ public class ArmstrongExample<br>
             Console.Write("Not Armstrong Number.");<br>
     }<br>
 }<br>
- Output:
+ Output:<br>
  *******<br>
  ![Screenshot (53)](https://user-images.githubusercontent.com/97940277/156501614-412927f2-e375-416d-b9e2-97f49d9e266a.png)<br>
  ![Screenshot (54)](https://user-images.githubusercontent.com/97940277/156501695-e572450f-21a6-4b97-86d2-3037f5afd2a1.png)<br>
