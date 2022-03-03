@@ -602,6 +602,242 @@ public class SumExample<br><br>
         Console.Write("Sum is= " + sum);<br>
     }<br>
 }<br>
+Output:<br>
+********<br>
+![Screenshot (57)](https://user-images.githubusercontent.com/97940277/156502543-0c72cb74-ef78-4872-946c-8a3ad5513fb2.png)<br>
+![Screenshot (58)](https://user-images.githubusercontent.com/97940277/156502728-04d03e1d-7c05-472d-a81f-74c1ba17ee6d.png)<br>
+ 
+ ********************************
+ 17.Write a C# program to reverse given number.<br>
+ *********************************
+ using System;  <br>
+  public class ReverseExample  <br>
+   {  <br>
+     public static void Main(string[] args)  <br>
+      {  <br>
+       int  n, reverse=0, rem;         <br>  
+       Console.Write("Enter a number: ");   <br>   
+       n= int.Parse(Console.ReadLine());  <br>   
+       while(n!=0)      <br>
+       { <br>     
+        rem=n%10;  <br>      
+        reverse=reverse*10+rem;    <br>  
+        n/=10;  <br>    
+       }      <br>
+       Console.Write("Reversed Number: "+reverse);<br>       
+    }  <br>
+  }  <br>
+ Output:<br>
+ *******<br>
+![Screenshot (60)](https://user-images.githubusercontent.com/97940277/156503477-26e1a5eb-8c35-4a06-ad35-1e52b0d5e646.png)<br>
+ 
+ ****************************************
+ 18.Swap two numbers without using third variable.<br>
+ **********************************
+using System;<br>
+public class SwapExample<br>
+{<br>
+    public static void Main(string[] args)<br><br><br>
+    {<br>
+        int a = 5, b = 10;<br>
+        Console.WriteLine("Before swap a= " + a + " b= " + b);<br>
+        a = a * b; //a=50 (5*10)  <br>    
+        b = a / b; //b=5 (50/10)      <br>
+        a = a / b; //a=10 (50/5)  <br>  
+        Console.Write("After swap a= " + a + " b= " + b);<br>
+    }<br>
+}<br>
+ Output:<br>
+ *******<br>
+ ![Screenshot (62)](https://user-images.githubusercontent.com/97940277/156504154-2d664af7-5704-4539-8881-3d6a2d1e2bb7.png)<br>
+ 
+ *********************************************
+ 19.Write a C# program to convert decimal number to binary<br>
+ **********************************************
+ using System;<br>
+public class ConversionExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, i;<br>
+        int[] a = new int[10];<br>
+        Console.Write("Enter the number to convert: ");<br>
+        n = int.Parse(Console.ReadLine());<br><br>
+        for (i = 0; n > 0; i++)<br>
+        {<br>
+            a[i] = n % 2;<br>
+            n = n / 2;<br>
+        }<br>
+        Console.Write("Binary of the given number= ");<br>
+        for (i = i - 1; i >= 0; i--)<br>
+        {<br>
+            Console.Write(a[i]);<br>
+        }<br>
+    }<br>
+}<br>
+ Output:<br>
+ *******<br>
+ ![Screenshot (65)](https://user-images.githubusercontent.com/97940277/156504761-2efc81a1-0b70-4232-8833-cfe10dff9a82.png)<br>
+ ![Screenshot (65)](https://user-images.githubusercontent.com/97940277/156504882-23f46e07-d7ee-4389-aa54-1dd712de1d41.png)<br>
+ 
+ ********************************
+ 20.Write a C# program to print alphabet triangle<br>
+ *******************************
+ using System;<br>
+public class PrintExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        char ch = 'A';<br>
+        int i, j, k, m;<br>
+        for (i = 1; i <= 5; i++)<br>
+        {<br>
+            for (j = 5; j >= i; j--)<br>
+                Console.Write(" ");<br>
+            for (k = 1; k <= i; k++)<br>
+                Console.Write(ch++);<br>
+            ch--;<br>
+            for (m = 1; m < i; m++)<br>
+                Console.Write(--ch);<br>
+            Console.Write("\n");<br>
+            ch = 'A';<br>
+        }<br>
+    }<br>
+}<br>
+Output:<br>
+********<br>
+ ![Screenshot (69)](https://user-images.githubusercontent.com/97940277/156505526-700e4c0a-af66-43b0-a00a-2e25ce60b990.png)<br>
+
+ *****************************
+ 21.Write a C# program to print number in triangle.<br>
+ *****************************
+ using System;<br>
+public class PrintExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int i, j, k, l, n;<br>
+        Console.Write("Enter the Range=");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        for (i = 1; i <= n; i++)<br>
+        {<br>
+            for (j = 1; j <= n - i; j++)<br>
+            {<br>
+                Console.Write(" ");<br>
+            }<br>
+            for (k = 1; k <= i; k++)<br>
+            {<br>
+                Console.Write(k);<br>
+            }<br>
+            for (l = i - 1; l >= 1; l--)<br>
+            {<br>
+                Console.Write(l);<br><br>
+            }<br>
+            Console.Write("\n");<br>
+        }<br>
+    }<br>
+}<br>
+Output:<br>
+********
+![Screenshot (71)](https://user-images.githubusercontent.com/97940277/156506272-3b016e00-ec10-43ff-b0b2-e0ab76da96f0.png)<br>
+ 
+*************************************
+22. Write a C# program to generate fibonacci triangle.<br>
+*************************************
+ using System;<br>
+public class PrintExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int a = 0, b = 1, i, c, n, j;<br>
+        Console.Write("Enter the limit: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        for (i = 1; i <= n; i++)<br>
+        {<br>
+            a = 0;<br>
+            b = 1;<br>
+            Console.Write(b + "\t");<br>
+            for (j = 1; j < i; j++)<br>
+            {<br>
+                c = a + b;<br>
+                Console.Write(c + "\t");<br>
+                a = b;<br>
+                b = c;<br>
+            }<br>
+            Console.Write("\n");<br>
+        }<br>
+    }<br>
+}<br>
+Output:<br>
+*******<br>
+![Screenshot (73)](https://user-images.githubusercontent.com/97940277/156507016-4ebb0e50-2ee8-4353-b005-f2b323d41d81.png)<br>
+ 
+***********************************
+23.Write a C# program to convert number in characters.<br>
+***********************************
+using System;<br>
+public class ConversionExample<br>
+{<br>v
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, sum = 0, r;<br>
+        Console.Write("Enter the Number= ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        while (n > 0)<br>
+        {<br>
+            r = n % 10;<br>
+            sum = sum * 10 + r;<br>
+            n = n / 10;<br>
+        }<br>
+        n = sum;<br>
+        while (n > 0)<br>
+        {<br>
+            r = n % 10;<br>
+            switch (r)<br>
+            {<br>
+                case 1:<br>
+                    Console.Write("one ");<br>
+                    break;<br>
+                case 2:<br>
+                    Console.Write("two ");<br>
+                    break;<br>
+                case 3:<br>
+                    Console.Write("three ");<br>
+                    break;<br>
+                case 4:<br>
+                    Console.Write("four ");<br>
+                    break;<br>
+                case 5:<br>
+                    Console.Write("five ");<br>
+                    break;<br>
+                case 6:<br>
+                    Console.Write("six ");<br>
+                    break;<br>
+                case 7:<br>
+                    Console.Write("seven ");<br>
+                    break;<br>
+                case 8:<br>
+                    Console.Write("eight ");<br>
+                    break;<br>
+                case 9:<br>
+                    Console.Write("nine ");<br>
+                    break;<br>
+                case 0:<br>
+                    Console.Write("zero ");<br>
+                    break;<br>
+                default:<br>
+                    Console.Write("tttt ");<br>
+                    break;<br>
+            }//end of switch   <br>   
+            n = n / 10;<br>
+        }//end of while loop <br>      
+    }
+}<br>
+
+
+
+
+
 
 
  
