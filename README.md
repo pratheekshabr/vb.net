@@ -26,11 +26,11 @@ namespace Exercises <br>
  } <br>
 } <br>
 output:<br>
-
+*********<br>
 ![image](https://user-images.githubusercontent.com/97940277/154424310-683c4e72-1d56-42de-8157-6305eb621de2.png)<br>
-
-<br>
+***********************
 2. C# Program to Check Whether the Entered Number is an Amicable Number  or Not. 
+************************
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -68,9 +68,11 @@ namespace Exercises <br>
 }<br>
 
 Output:<br>
+*******<br>
 ![image](https://user-images.githubusercontent.com/97940277/154425770-736ffae1-e0b1-47bb-9302-dc3bb7b0f174.png)<br>
-
+*************************
 3. C# Program to Illustrate Multilevel Inheritance with Virtual Methods  (displaying student details). <br>
+*************************
 using System; <br>
 namespace Exercises<br> 
 { <br>
@@ -176,8 +178,9 @@ else <br>
 }<br>
 output:<br>
 ![Screenshot (2)](https://user-images.githubusercontent.com/97940277/154626095-6285ac41-c5d1-43f9-b32f-4633d2e02030.png)<br>
-
+**********************
 4. C# Program to Create a Gray Code.<br>
+*******************
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -203,7 +206,9 @@ namespace Exercises <br>
 Output:<br>
 ![Screenshot (4)](https://user-images.githubusercontent.com/97940277/154628717-e1674fe3-eb2f-4265-80ca-84070f18b137.png)<br>
 
+************************************
 5. C# program to calculate volume of 2 boxes and find the resultant volume  after addition of 2 boxes by implementing operator overloading.<br> 
+*****************************************
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -245,9 +250,11 @@ namespace Exercises<br>
 }<br>
 
 Output:<br>
+***********<br>
 ![Screenshot (6)](https://user-images.githubusercontent.com/97940277/154629462-8db67286-8206-4499-a9f4-332a2a467ab8.png)<br>
-
+******************
 6. C# Program to Implement Principles of Delegates (converting input string to  uppercase first, last and entire string). 
+***************
 using System; <br>
 namespace Exercises <br>
 { <br>
@@ -284,11 +291,12 @@ namespace Exercises <br>
  } <br>
 }<br>
 
-Output:<BR>
+Output:<br>
  ![Screenshot (8)](https://user-images.githubusercontent.com/97940277/154631240-41ca6a79-7405-492b-92fa-a0480c9c1587.png)<br>
-
- 7. C# Program to Generate Register Number automatically for 100 Students  using Static Constructor. <br>
-using System; <br>
+***************
+ 7. C# Program to Generate Register Number automatically for 100 Students  using Static Constructor.<br>
+***********************
+ using System; <br>
 namespace Exercises <br>
 { <br>
  class RegisterNum <br>
@@ -314,11 +322,13 @@ namespace Exercises <br>
  } <br>
 } <br>
  Output:<br>
+ ********<br>
  ![Screenshot (11)](https://user-images.githubusercontent.com/97940277/154634643-d5f0df4c-099a-438c-958b-b7b58cd0741a.png)![Screenshot (12)](https://user-images.githubusercontent.com/97940277/154634798-467fda08-180c-4240-bce2-37ef552d001f.png)
 <br>
 
- 
+ **********************
  8. C# Program to Find the Frequency of the Word ʺisʺ in a given Sentence. <br>
+ *******************
 using System;<br> 
 namespace Exercises <br>
 { <br>
@@ -346,10 +356,12 @@ Console.WriteLine("\n Number of 'is' in '" + inputString + "' is: " + count); }<
 
 
 Output:<br>
+************
  ![Screenshot (14)](https://user-images.githubusercontent.com/97940277/154635459-86a50bf4-1669-4cd4-89c0-9478c1b3ee1f.png)<br>
-
+*******************
  9. C# program that benchmarks 2D, jagged array allocation. <br>
- using System;<br>
+******************
+using System;<br>
 using System.Diagnostics;<br>
 namespace Exercises<br>
 {<br>
@@ -396,10 +408,11 @@ namespace Exercises<br>
  } <br>
 } <br>
                             
- Output:<br><br>
+ Output:<br>
+ ********<br>
  ![Screenshot (16)](https://user-images.githubusercontent.com/97940277/154636652-e0ddfc0e-52db-4442-9000-3c2bb79673e9.png)<br>
 *****************
-10.
+10.C# Program to Find the Sum of the Values on Diagonal of the Matrix. <br>
  *****************
  System; <br>
 namespace Exercises <br>
@@ -448,6 +461,8 @@ namespace Exercises <br>
  
  Output:<br>
  *********<br>
+ ![image](https://user-images.githubusercontent.com/97940277/156509765-17a17fd8-2056-4a13-9c68-173e01763179.png)<br>
+
  **************
  11.FibonacciExample<br>
  ************
