@@ -544,14 +544,37 @@ public class FactorialExample<br>
         {<br>
             fact = fact * i;<br>
         }<br>
-        Console.Write("Factorial of " + number + " is: " + fact);<br>
+        Console.Write("Factorial of " + number + " is: " + fact)<br>
     }<br>
 }<br>
  
  Output:<br>
  **********
- ![Screenshot (50)](https://user-images.githubusercontent.com/97940277/156500547-80ae57bf-afcd-4cff-a84d-ef8b562f0b0e.png)<br>
-
+ ![Screenshot (50)](https://user-images.githubusercontent.com/97940277/156500547-80ae57bf-afcd-4cff-a84d-ef8b562f0b0e.png) <br>
+ *******************
+ 15.Write a C# program to check amstrong number.<br>
+ *******************
+ using System;<br>
+public class ArmstrongExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {
+        int n, r, sum = 0, temp;<br>
+        Console.Write("Enter the Number= ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        temp = n;<br>
+        while (n > 0)<br>
+        {<br>
+            r = n % 10;<br>
+            sum = sum + (r * r * r);<br>
+            n = n / 10;<br>
+        }<br>
+        if (temp == sum)<br>
+            Console.Write("Armstrong Number.");<br>
+        else<br>
+            Console.Write("Not Armstrong Number.");<br>
+    }<br>
+}<br>
 
 
 
