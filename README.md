@@ -358,6 +358,7 @@ Console.WriteLine("\n Number of 'is' in '" + inputString + "' is: " + count); }<
 Output:<br>
 ************
  ![Screenshot (14)](https://user-images.githubusercontent.com/97940277/154635459-86a50bf4-1669-4cd4-89c0-9478c1b3ee1f.png)<br>
+
 *******************
  9. C# program that benchmarks 2D, jagged array allocation. <br>
 ******************
@@ -411,6 +412,7 @@ namespace Exercises<br>
  Output:<br>
  ********<br>
  ![Screenshot (16)](https://user-images.githubusercontent.com/97940277/154636652-e0ddfc0e-52db-4442-9000-3c2bb79673e9.png)<br>
+
 *****************
 10.C# Program to Find the Sum of the Values on Diagonal of the Matrix. <br>
  *****************
@@ -461,8 +463,8 @@ namespace Exercises <br>
  
  Output:<br>
  *********<br>
- ![image](https://user-images.githubusercontent.com/97940277/156509765-17a17fd8-2056-4a13-9c68-173e01763179.png)<br>
-
+ ![Screenshot (77)](https://user-images.githubusercontent.com/97940277/156511984-209b9084-4c84-481b-85cf-a269ff600d25.png)<br>
+ 
  **************
  11.FibonacciExample<br>
  ************
@@ -488,7 +490,8 @@ public class FibonacciExample<br>
  Output:<br>
  *********<br>
  ![Screenshot (28)](https://user-images.githubusercontent.com/97940277/155659464-49587883-cf56-4664-b414-03e21626deac.png)<br>
- ***************
+
+***************
  12.Write a C# program to check prime numbers<br>
  *************
  using System;  <br>
@@ -517,6 +520,7 @@ public class FibonacciExample<br>
  *********
  ![Screenshot (31)](https://user-images.githubusercontent.com/97940277/155660113-a46bbce0-b6cf-47af-bc35-8d2e318006a1.png)<br>
  ![Screenshot (32)](https://user-images.githubusercontent.com/97940277/155660237-cc79a25c-08b1-4389-9546-402f406d5dba.png)<br>
+
 ****************************
  13.Write a C# program to check palindrome number<br>
  *****************************
@@ -544,7 +548,8 @@ public class FibonacciExample<br>
 Output:<br>
  ![Screenshot (47)](https://user-images.githubusercontent.com/97940277/156499661-a3b106d6-c3ae-489d-b386-4111747b6985.png)<br>
  ![Screenshot (48)](https://user-images.githubusercontent.com/97940277/156499692-3b2488e1-b9af-4377-b8db-0bc30940f56e.png)<br>
-*****************************
+
+****************************
  14.Write a C# program to check factorial of a number<br>
  ****************************
  using System;<br>
@@ -567,7 +572,6 @@ public class FactorialExample<br>
  **********<br>
  ![Screenshot (50)](https://user-images.githubusercontent.com/97940277/156500547-80ae57bf-afcd-4cff-a84d-ef8b562f0b0e.png) <br>
 
- 
  *******************
  15.Write a C# program to check amstrong number.<br>
  *******************
