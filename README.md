@@ -502,4 +502,33 @@ public class FibonacciExample<br>
  *********
  ![Screenshot (31)](https://user-images.githubusercontent.com/97940277/155660113-a46bbce0-b6cf-47af-bc35-8d2e318006a1.png)<br>
  ![Screenshot (32)](https://user-images.githubusercontent.com/97940277/155660237-cc79a25c-08b1-4389-9546-402f406d5dba.png)<br>
+****************************
+ 13.Write a C# program to check palindrome number<br>
+ *****************************
+ using System;  <br>
+  public class PalindromeExample  <br>
+   {  <br>
+     public static void Main(string[] args)  <br>
+      {  <br><br>
+          int n,r,sum=0,temp;   <br> 
+          Console.Write("Enter the Number: ");   <br>
+          n = int.Parse(Console.ReadLine());  <br>
+          temp=n;  <br>
+          while(n>0)<br>
+          { <br>
+           r=n%10;<br>
+           sum=(sum*10)+r; <br>   
+           n=n/10; <br>
+          } <br>     
+          if(temp==sum) <br>     
+           Console.Write("Number is Palindrome.");  <br>    
+          else      <br>
+           Console.Write("Number is not Palindrome");   <br>  
+    }  <br>
+  }  <br>
+Output:<br>
+ ![Screenshot (47)](https://user-images.githubusercontent.com/97940277/156499661-a3b106d6-c3ae-489d-b386-4111747b6985.png)<br>
+ ![Screenshot (48)](https://user-images.githubusercontent.com/97940277/156499692-3b2488e1-b9af-4377-b8db-0bc30940f56e.png)<br>
+
+
 
