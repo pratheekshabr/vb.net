@@ -540,3 +540,15 @@ namespace Exercises <br>
         } <br>
     } <br>
 } <br>
+
+Output:<br>
+*********<br>
+File123:<br>
+![Screenshot (81)](https://user-images.githubusercontent.com/97940277/156516015-4d489ee2-0997-4e89-bc95-80f5df37c95f.png)<br>
+
+
+![Screenshot (83)](https://user-images.githubusercontent.com/97940277/156515950-2a53edbb-7d8a-46e1-9dcd-5bd9ba7a595a.png)<br>
+
+![Screenshot (84)](https://user-images.githubusercontent.com/97940277/156515761-71d803b2-274d-4726-8c9c-fcf70a46212e.png)<br>
+
+
