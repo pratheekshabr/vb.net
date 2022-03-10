@@ -552,12 +552,57 @@ File123:<br>
 ![Screenshot (84)](https://user-images.githubusercontent.com/97940277/156515761-71d803b2-274d-4726-8c9c-fcf70a46212e.png)<br>
 
 ***********************************
-12.
+12.C# program to perform file comparison.<br>
 ***********************************
+ using System;<br>
+ using System.IO;<br>
+namespace Exercises<br>
+{ <br>
+    class FileRead<br>
+{<br>
+    public static void Main()<br>
 
+    {<br>
+        string file1;<br>
+        string file2;<br>
+        Console.Write("enter the first file path:");<br>
+        file1 = Console.ReadLine();<br>
+        Console.Write("enter the second file path:");<br>
+        file2 = Console.ReadLine();<br>
+        if (!File.Exists(file1))<br>
+        {<br>
+            Console.WriteLine("first file does not exist!");<br>
+        }<br>
+        else if (!File.Exists(file2))<br>
+        {<br>
+            Console.WriteLine("Second file doesnot exist!");<br>
+
+        }<br>
+        else if (File.ReadAllText(file1) == File.ReadAllText(file2))<br>
+        {<br>
+            Console.WriteLine("Both files contain the same content");<br>
+
+        }<br>
+        else<br>
+        {<br>
+            Console.WriteLine("Contents of files are not same");<br>
+        }<br>
+    }<br>
+}<br>
+}<br>
 
 Output:<br>
 *******<br>
+file1.txt<br>
+
+![Screenshot (98)](https://user-images.githubusercontent.com/97940277/157646779-c6548510-43de-452f-a85e-e12ee67a40fa.png)<br>
+
+file2.txt<br>
+![Screenshot (100)](https://user-images.githubusercontent.com/97940277/157647116-6524dcd6-4b86-4dcb-aaab-c2dd4aa9d4f2.png)<br>
+![Screenshot (101)](https://user-images.githubusercontent.com/97940277/157647279-cb3d28e8-fa82-4247-b931-b56290bb8696.png)<br>
+![Screenshot (102)](https://user-images.githubusercontent.com/97940277/157647450-7a885099-76d1-4ebd-b38d-a674e6a33405.png)<br>
+
+
 ************************************
 13. C# orogram to implement IComparable interface using system.<br>
 ************************************
