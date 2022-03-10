@@ -638,7 +638,7 @@ namespace Exercises<br>
                 Console.WriteLine("Thread1 is executing");<br>
             }<br>
         }<br
-        public void ThreadFun2(object obj)<br
+        public void ThreadFun2(object obj)<br>
         {<br>
             int loop = 0;<br>
             for (loop = 0; loop <= 4; loop++)<br>
@@ -654,7 +654,7 @@ namespace Exercises<br>
                 ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun1)); ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun2));<br>
             }<br>
             Console.ReadKey();<br>
-        }<br
+        }<br>
     }<br>
 }<br>
 Output:<br>
