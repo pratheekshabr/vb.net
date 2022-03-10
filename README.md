@@ -466,7 +466,7 @@ namespace Exercises <br>
  ![Screenshot (77)](https://user-images.githubusercontent.com/97940277/156511984-209b9084-4c84-481b-85cf-a269ff600d25.png)<br>
  
  *******************
- 11.C# Program to Create a File, Check the Existence of a File and Read the  Contents of the File. <br>
+ 11.C# Program to Create a File, Check the Existence of a File and Read the contents of the File. <br>
  *********************
  using System; <br>
 using System.IO; <br>
@@ -550,5 +550,81 @@ File123:<br>
 ![Screenshot (83)](https://user-images.githubusercontent.com/97940277/156515950-2a53edbb-7d8a-46e1-9dcd-5bd9ba7a595a.png)<br>
 
 ![Screenshot (84)](https://user-images.githubusercontent.com/97940277/156515761-71d803b2-274d-4726-8c9c-fcf70a46212e.png)<br>
+
+***********************************
+12.
+***********************************
+
+
+Output:<br>
+*******<br>
+************************************
+13. C# orogram to implement IComparable interface using system.<br>
+************************************
+using System;<br>
+namespace Exercises<br>v
+{<br>
+    class Fraction : IComparable<br>
+    {<br>
+        int z, n;<br>
+        public Fraction(int z, int n)<br>
+        {<br>
+            this.z = z;<br>
+            this.n = n;<br><br>
+        }<br>
+        public static Fraction operator +(Fraction a, Fraction b)<br>
+        {<br>
+            return new Fraction(a.z * b.n + a.n * b.z, a.n * b.n);<br>
+        }<br>
+        public static Fraction operator *(Fraction a, Fraction b)<br>
+        {<br>
+            return new Fraction(a.z * b.z, a.n * b.n);<br>
+        }<br>
+        public int CompareTo(object obj)<br>
+        {<br>
+            Fraction f = (Fraction)obj;<br><br>
+            if ((float)z / n < (float)f.z / f.n)<br>
+                return -1;<br>
+            else if ((float)z / n > (float)f.z / f.n)<br>
+                return 1;<br>
+            else<br><br>
+                return 0;<br>
+        }<br>
+        public override string ToString()<br>
+        {<br>
+            return z + "/" + n;<br>
+        }<br>
+    }<br>
+    class ICompInterface<br><br>
+    {<br>
+        public static void Main()<br>
+        {<br>
+        Fraction[] a = {<br>
+ new Fraction(5,2),<br>
+ new Fraction(29,6),<br>
+ new Fraction(4,5),<br>
+ new Fraction(10,8),<br>
+ new Fraction(34,7)<br>
+ };<br>
+            Array.Sort(a);
+            Console.WriteLine("Implementing the IComparable Interface in " + "Displaying  Fractions : ");<br>
+            foreach (Fraction f in a)<br>
+            {<br>
+                Console.WriteLine(f + " ");<br>
+            }<br>
+            Console.WriteLine();<br>
+            Console.ReadLine();<br>
+        }<br>
+    }<br>
+}<br>
+Output:<br>
+*******
+![Screenshot (86)](https://user-images.githubusercontent.com/97940277/157637054-fd32208f-c969-4b9d-adfc-d97d342cce29.png)<br>
+
+
+
+
+
+
 
 
