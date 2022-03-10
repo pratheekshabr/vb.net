@@ -562,8 +562,8 @@ namespace Exercises<br>
 {<br>
     public static void Main()<br>
 
-    {<br>
-        string file1;<br>
+   { <br>
+       string file1;<br>
         string file2;<br>
         Console.Write("enter the first file path:");<br>
         file1 = Console.ReadLine();<br>
@@ -577,15 +577,15 @@ namespace Exercises<br>
         {<br>
             Console.WriteLine("Second file doesnot exist!");<br>
 
-        }<br>
-        else if (File.ReadAllText(file1) == File.ReadAllText(file2))<br>
-        {<br>
+      }<br>
+     else if (File.ReadAllText(file1) == File.ReadAllText(file2))<br>
+     {<br>
             Console.WriteLine("Both files contain the same content");<br>
 
         }<br>
         else<br>
-        {<br>
-            Console.WriteLine("Contents of files are not same");<br>
+    {<br
+    Console.WriteLine("Contents of files are not same");<br>
         }<br>
     }<br>
 }<br>
