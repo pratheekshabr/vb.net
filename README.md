@@ -960,7 +960,61 @@ Output:<br>
 ![Screenshot (129)](https://user-images.githubusercontent.com/97940277/158946808-0e57c0c8-f360-4dfb-9a36-561a54799efe.png)<br>
 
 ****************************************
-20.
+20.Develop a winform application to create flat check.<br>
+*****************************************
+![Screenshot (138)](https://user-images.githubusercontent.com/97940277/158949783-89979e9d-c692-4a62-b346-2685f26eedac.png)<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+
+namespace winform_app<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+            timer1.Start();<br>
+        }<br>
+
+        private void Form1_Load(object sender, EventArgs e)<br>
+        {<br>
+            System.Timers.Timer timer = new System.Timers.Timer();<br>
+            timer.Interval = 1000;//1s<br>
+            timer.Elapsed += Timer_Elapsed;<br>
+            timer.Start();<br>
+        }<br>
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)<br>
+        {<br>
+            circularProgressBar1.Invoke((MethodInvoker)delegate<br>
+            {<br>
+                circularProgressBar1.Text = DateTime.Now.ToString("hh:mm:ss"); circularProgressBar1.SubscriptText = DateTime.Now.ToString("tt");//AM or PM  }); <br>
+
+            });<br>
+
+        }<br>
+    }<br>
+
+}<br>
+Output:<br>
+*********<br>
+![Screenshot (139)](https://user-images.githubusercontent.com/97940277/158950181-8ca58958-e847-4f8a-843d-4c0afad18728.png)<br>
+
+*******************************************
+21.
+*******************************************
+
+
+    
+    
+    
+
 
 
     
