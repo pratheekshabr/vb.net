@@ -908,7 +908,7 @@ Output:<br>
 *********************************
 19.C#Program to Create a Progress Bar Control.<br>
 **********************************
-![Screenshot (128)](https://user-images.githubusercontent.com/97940277/158946705-34d7742c-4c62-4a9e-ab5a-27692894cab6.png)<br>
+![Screenshot (132)](https://user-images.githubusercontent.com/97940277/158947114-257de8af-5544-49d2-9214-22cd27ad7afe.png)<br>
 
 using System;<br>
 using System.Collections.Generic;<br>
