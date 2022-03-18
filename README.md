@@ -758,9 +758,8 @@ Output:<br>
 *********<br>
 ![Screenshot (93)](https://user-images.githubusercontent.com/97940277/157641269-3f211faf-5572-4af4-824a-2166fd2b8802.png)<br>
 
-****************PART-B WINDOWS APPLICATION<BR></title>
-********************************
- 16. C# Program to Convert Digits to Words.<br>
+****************PART-B WINDOWS APPLICATION**************************
+16. C# Program to Convert Digits to Words.<br>
 *********************************
 
 
