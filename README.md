@@ -803,11 +803,11 @@ namespace digits_to_words<br>
                 word += NumtoWord(number / 10000000) + "Corer"; number %= 10000000;<br>
             }<br>
 
-        if (number / 100000 > 0)<br>
-            {<br>
-                word += NumtoWord(number / 100000) + "Lacs";<br>
+      if (number / 100000 > 0)<br>
+           {<br>
+               word += NumtoWord(number / 100000) + "Lacs";<br>
                 number %= 100000;<br>
-            }<br>
+          }<br>
             if (number / 1000 > 0)<br>
             {<br>
                 word += NumtoWord(number / 1000) + "Thousand";<br>
