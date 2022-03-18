@@ -803,44 +803,174 @@ namespace digits_to_words<br>
                 word += NumtoWord(number / 10000000) + "Corer"; number %= 10000000;<br>
             }<br>
 
-      if (number / 100000 > 0)<br>
+    if (number / 100000 > 0)<br>
            {<br>
-               word += NumtoWord(number / 100000) + "Lacs";<br>
+             word += NumtoWord(number / 100000) + "Lacs";<br>
                 number %= 100000;<br>
           }<br>
-            if (number / 1000 > 0)<br>
+          if (number / 1000 > 0)<br>
             {<br>
                 word += NumtoWord(number / 1000) + "Thousand";<br>
-                number %= 1000;<br>
+             number %= 1000;<br>
             }<br>
-            if (number / 100 > 0)<br>
+       if (number / 100 > 0)<br>
             {<br>
                 word += NumtoWord(number / 100) + "Hundred";<br>
-                number %= 100;<br>
+number %= 100;<br>
             }<br>
-            if (number > 0)<br>
-            {<br>
+      if (number > 0)<br>
+       {<br>
                 string[] units = new string[] { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen" };<br>
-                string[] Tens = new string[] { "Zero", "Ten", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };<br>
-                if (number < 20)<br>
+               string[] Tens = new string[] { "Zero", "Ten", "Twenty", "Thirty", "Fourty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };<br>
+         if (number < 20)<br>
                 {<br>
-                    word += units[number];<br>
-                }<br>
-                else<br>
+            word += units[number];<br>
+            }<br>
+            else<br>
                 {<br>
-                    word += Tens[number / 10];<br>
-                    if (number % 10 > 0)<br>
+                word += Tens[number / 10];<br>
+          if (number % 10 > 0)<br>
                     {<br>
                         word += units[number % 10];<br>
                     }<br>
-                }<br>
+              }<br>
             }<br>
-            return word;<br>
+          return word;<br>
+      }<br>
+    }<br>
+}<br>
+Output:<br>
+*********<br>
+![Screenshot (115)](https://user-images.githubusercontent.com/97940277/158945102-7908d808-2d36-43fe-90cd-63f513f9bccd.png)<br>
+
+***********************
+18.C# Program to Perform Reversal,Padding and Trimming Operations on string.<br>
+*************************
+![Screenshot (118)](https://user-images.githubusercontent.com/97940277/158945854-599059ad-be7f-4420-90bb-4c686d85a701.png)<br>
+
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+<br>
+namespace Reversal_padding<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
+<br>
+        private void button1_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString, revstr = "";<br>
+            int Length;<br>
+            inputString = txtInput.Text;<br>
+            Length = inputString.Length - 1;<br>
+            while (Length >= 0)<br>
+            {<br>
+                revstr = revstr + inputString[Length];<br>
+                Length--;<br>
+            }<br>
+            MessageBox.Show("Reverse String Is : " + revstr, "Result");<br>
+        }<br>
+
+        private void button2_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString;<br>
+            inputString = txtInput.Text;<br>
+            MessageBox.Show("The String After Trimming : " + inputString.Trim(), "Result");<br>
+        }<br>
+
+        private void button3_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString;<br>
+            inputString = txtInput.Text<br>;<br>
+            inputString = inputString.PadLeft(10, '*');<br>
+            inputString = inputString.PadRight(15, '*');<br>
+            MessageBox.Show("String After Padding : " + inputString, "Result");<br>
+
         }<br>
     }<br>
 }<br>
-Output<br>
-*********
+Output:<br>
+**********<br>
+![Screenshot (120)](https://user-images.githubusercontent.com/97940277/158945986-1be5b8d4-99e6-450a-a502-73153cce5264.png)<br>
+![Screenshot (121)](https://user-images.githubusercontent.com/97940277/158946068-f40a891c-4984-424c-ba0e-5f0a85734f8f.png)<br>
+![Screenshot (122)](https://user-images.githubusercontent.com/97940277/158946141-062f6423-ec11-4fce-855c-8a75925f2159.png)<br>
+
+*********************************
+19.C#Program to Create a Progress Bar Control.<br>
+**********************************
+![Screenshot (128)](https://user-images.githubusercontent.com/97940277/158946705-34d7742c-4c62-4a9e-ab5a-27692894cab6.png)<br>
+
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading;<br>
+using System.Windows.Forms;<br>
+<br>
+namespace Progress<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)<br>
+        {<br>
+            for (int i = 1; i <= 100; i++)<br><br>
+            {<br>
+                Thread.Sleep(50);<br>
+                backgroundWorker1.ReportProgress(i);<br>
+            }<br>
+        }<br>
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)<br>
+        {<br>
+            {<br>
+                progressBar1.Value = e.ProgressPercentage;<br>
+                this.Text = "Progress: " + e.ProgressPercentage.ToString() + "%";<br>
+            }<br>
+        }<br>
+
+        private void Form1_Load(object sender, EventArgs e)<br>
+        {<br>
+            backgroundWorker1.WorkerReportsProgress = true;<br>
+            backgroundWorker1.RunWorkerAsync();<br>
+
+        }<br>
+    }<br>
+
+}<br>
+Output:<br>
+*********<br>
+![Screenshot (129)](https://user-images.githubusercontent.com/97940277/158946808-0e57c0c8-f360-4dfb-9a36-561a54799efe.png)<br>
+
+****************************************
+20.
+
+
+    
+
+
+
+
+
+
+
 
 
 
