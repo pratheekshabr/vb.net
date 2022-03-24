@@ -1009,6 +1009,125 @@ Output:<br>
 *******************************************
 21.C# Program to perform a number guessing game.<br>
 *******************************************
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+
+namespace guessinggame<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {
+        static Random r = new Random();<br>
+        int value;<br>
+        int guessnum;<br>
+        int win = 10;<br>
+        int guess = 1;<br>
+        TextBox textBox1;<br>
+        Button button1;<br>
+        RichTextBox richTextBox1;<br>
+        RichTextBox richTextBox2;<br>
+        Label label4;
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+           
+           value = r.Next(10);<br>
+            this.Controls.Clear();<br>
+            this.BackColor = Color.Pink;<br>
+            this.AutoSize = true;<br>
+            this.Padding = new Padding(16);<br>
+
+            Label label = new Label();<br>
+            label.Text = "Pick a number between 1 and 10";<br>
+            label.Bounds = new Rectangle(10, 20, 340, 40);<br>
+            label.Font = new Font("Arial", 16);<br>
+            textBox1 = new TextBox();
+            textBox1.Bounds = new Rectangle(20, 50, 120, 80);
+            textBox1.Font = new Font("Arial", 24);
+            button1 = new Button();
+            button1.Text = " Check Your Guess ";
+            button1.Bounds = new Rectangle(160, 50, 120, 40);
+            button1.BackColor = Color.LightGray;
+            button1.Click += new EventHandler(button1_Click);
+            Label label2 = new Label();
+            label2.Text = "Low Guess";
+            label2.Bounds = new Rectangle(20, 150, 160, 40);
+            label2.Font = new Font("Arial", 18);
+            richTextBox1 = new RichTextBox();
+            richTextBox1.Bounds = new Rectangle(20, 190, 160, 300);
+            richTextBox1.Font = new Font("Arial", 16);
+            Label label3 = new Label();
+            label3.Text = "High Guess";
+            label3.Bounds = new Rectangle(180, 150, 160, 40);
+            label3.Font = new Font("Arial", 18);
+            richTextBox2 = new RichTextBox();
+            richTextBox2.Bounds = new Rectangle(180, 190, 160, 300);
+            richTextBox2.Font = new Font("Arial", 16);
+            label4 = new Label();
+            label4.Bounds = new Rectangle(20, 100, 340, 40);
+            label4.Font = new Font("Arial", 16);
+            this.Controls.Add(label);
+            this.Controls.Add(textBox1);
+            this.Controls.Add(button1);
+            this.Controls.Add(label4);
+            this.Controls.Add(label2);
+            this.Controls.Add(label3);
+            this.Controls.Add(richTextBox1);
+            this.Controls.Add(richTextBox2);
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Coding of game
+            if (textBox1.Text == "")
+            {
+                return;
+            }
+            guessnum = Convert.ToInt32(textBox1.Text);
+            textBox1.Text = String.Empty;
+            if (win >= 0)
+            {
+                if (guessnum == value)
+                {
+                    MessageBox.Show("You have guessed the number! \n The number was " + value);
+                    InitializeComponent();
+                }
+                else if (guessnum < value)
+                {
+                    richTextBox1.Text += guessnum + "\n";
+                    MessageBox.Show("wrong Guess and number of guesses left are  " + (10 - guess));
+
+                }
+                else if (guessnum > value)
+                {
+                    richTextBox2.Text += guessnum + "\n";
+                    MessageBox.Show("wrong Guess and number of guesses left are  " + (10 - guess));
+
+                }
+                guess++;
+                win--;
+            }
+            if (guess == 11)
+            {
+                label4.Text = "You loose,Correct Guess is " + value;
+            }
+        }
+    }
+}
+<br>
 ![image](https://user-images.githubusercontent.com/97940277/159851401-cf2787a4-7a28-4bfa-a328-d36651000eb0.png)<br>
 ![image](https://user-images.githubusercontent.com/97940277/159851608-dcff2f5e-4005-4743-b094-d71eee8347ef.png)<br>
 
