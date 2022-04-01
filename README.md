@@ -1144,9 +1144,9 @@ using System.Text;<br>
 using System.Threading.Tasks;<br>
 using System.Windows.Forms;<br>
 
-namespace notepad3<br>
-{<br>
-    public partial class Form1 : Form<br>
+   namespace notepad3<br>
+    {<br>
+     public partial class Form1 : Form<br>
     {<br>
         private string fileName;<br>
         private RichTextBox txtContent;<br>
