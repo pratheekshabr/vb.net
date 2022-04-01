@@ -1130,6 +1130,120 @@ namespace guessinggame<br>
 ![image](https://user-images.githubusercontent.com/97940277/159851401-cf2787a4-7a28-4bfa-a328-d36651000eb0.png)<br>
 ![image](https://user-images.githubusercontent.com/97940277/159851608-dcff2f5e-4005-4743-b094-d71eee8347ef.png)<br>
 
+****************************************
+22. Develop an application to create a notepad.<br>
+****************************************
+![Screenshot (146)](https://user-images.githubusercontent.com/97940277/161197465-95bc9189-113c-44d3-b217-6762592bfae8.png)<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br><br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+
+namespace notepad3<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        private string fileName;<br>
+        private RichTextBox txtContent;<br>
+        private ToolBar toolBar;<br>
+
+
+        private void Form1_Load(object sender, EventArgs e)<br>
+        {<br>
+
+        }<br>
+        
+        <br>
+            <br>
+            internal Form1()<br>
+            {<br>
+                fileName = null;<br>
+                initializeComponents();<br>
+            }<br>
+            void initializeComponents()<br>
+            {<br>
+                this.Text = "My notepad";<br>
+                this.MinimumSize = new Size(600, 450);<br>
+                this.FormClosing += new FormClosingEventHandler(NotepadClosing); this.MaximizeBox = true;<br>
+                toolBar = new ToolBar();<br>
+                toolBar.Font = new Font("Arial", 16);<br>
+                toolBar.Padding = new Padding(4);<br>
+                toolBar.ButtonClick += new ToolBarButtonClickEventHandler(toolBarClicked);<br>
+                ToolBarButton toolBarButton1 = new ToolBarButton();<br>
+                ToolBarButton toolBarButton2 = new ToolBarButton(); <br>
+                ToolBarButton toolBarButton3 = new ToolBarButton(); toolBarButton1.Text = "New";<br>
+                toolBarButton2.Text = "Open";<br>
+                toolBarButton3.Text = "Save";<br>
+                toolBar.Buttons.Add(toolBarButton1);<br>
+                toolBar.Buttons.Add(toolBarButton2);<br>
+                toolBar.Buttons.Add(toolBarButton3);<br>
+                txtContent = new RichTextBox();<br>
+                txtContent.Size = this.ClientSize;<br>
+                txtContent.Height -= toolBar.Height;<br>
+                txtContent.Top = toolBar.Height;<br>
+                txtContent.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;<br>
+                txtContent.Font = new Font("Arial", 16);<br>
+                txtContent.AcceptsTab = true;<br>
+                txtContent.Padding = new Padding(8);<br>
+
+            this.Controls.Add(toolBar);<br>
+                this.Controls.Add(txtContent);<br>
+            }<br>
+            private void toolBarClicked(Object sender, ToolBarButtonClickEventArgs e)<br>
+            {
+                saveFile();<br>
+                switch (toolBar.Buttons.IndexOf(e.Button))<br>
+                {<br>
+                    case 0:<br>
+                        this.Text += "My notepad";<br>
+                        txtContent.Text = string.Empty;<br>
+                        fileName = null;<br>
+                        break;<br>
+                    case 1:<br>
+                        OpenFileDialog openDlg = new OpenFileDialog();<br>
+                        if (DialogResult.OK == openDlg.ShowDialog())<br>
+                        {<br>
+                            fileName = openDlg.FileName; txtContent.LoadFile(fileName); this.Text = "My notepad " + fileName;<br>
+                        }<br>
+                        break;<br>
+                }<br>
+            }<br>
+            void saveFile()<br>
+            {<br>
+                if (fileName == null)<br>
+                {<br>
+                    SaveFileDialog saveDlg = new SaveFileDialog();<br>
+                    if (DialogResult.OK == saveDlg.ShowDialog())<br>
+                    {<br>
+                        fileName = saveDlg.FileName;<br><br>
+                        this.Text += " " + fileName;<br>
+                    }<br>
+                }<br>
+                else<br>
+                {<br>
+                    txtContent.SaveFile(fileName, RichTextBoxStreamType.RichText);<br>
+                }<br>
+            }<br>
+            private void NotepadClosing(Object sender, FormClosingEventArgs e)<br>
+            {<br>
+                saveFile();<br>
+            }<br>
+           /* static void Main(String[] args)<br>
+            {<br>
+
+            Application.Run(new NotepadForm());<br>
+            }*/<br>
+        }<br>
+    }<br>
+Output:<br>
+*********
+![Screenshot (149)](https://user-images.githubusercontent.com/97940277/161198109-37a5f26e-93c2-4117-be8b-884827e90def.png)<br>
+
 
 ****************************************
 23.C# Program to Perform Reversal, Padding and Trimming Operations on  string<br>
