@@ -1564,51 +1564,48 @@ using System.Windows.Forms;<br>
 namespace money_coversion<br>
 {<br>
     public partial class Form1 : Form<br>
-    {<br>
-        public Form1()<br>
-        {<br>
+ {<br>
+     public Form1()<br>
+     {<br>
             InitializeComponent();<br>
         }<br>
+ private void Form1_Load(object sender, EventArgs e)<br>
+   {<br>
+    }<br><br>
 
-        private void Form1_Load(object sender, EventArgs e)<br>
-        {<br>
-        }<br><br>
-
-        private void button1_Click(object sender, EventArgs e)<br>
-        {<br>
-            {<br>
-                label4.Visible = true;<br>
-                if (textBox1.Text == "")<br>
-                {<br>
-                    label4.Text = "Enter the amount";<br>
-                }<br>
-                else<br>
-                {<br>
-                    Double convertedamt = Convert.ToDouble(textBox1.Text);<br>
-                    if (comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "USD")<br>
-                    {<br>
-                        Double a = convertedamt / 74;<br>
-                        label4.Text = a + "$";<br>
-                    }<br>
-                    else if (comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "SAR")<br>
-                    {<br>
-                        Double a = convertedamt / 17;<br>
-                        label4.Text = a + "SAR";<br>
-                    }<br>
-                    else if (comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "EUR")<br>
-                    {<br>
-
-                        Double a = convertedamt / 11;<br>
-                        label4.Text = a + "EUR";<br>
-                    }<br>
-                    else<br>
-                    {<br>
-                        label4.Text = "Please Enter the conversion code";<br>
-                    }<br>
-                }<br>
-            }<br>
+     private void button1_Click(object sender, EventArgs e)<br>
+     {<br>
+       {<br>
+     label4.Visible = true;<br>
+      if (textBox1.Text == "")<br>
+       {<br>
+        label4.Text = "Enter the amount";<br>
         }<br>
+         else<br>
+         {<br>
+          Double convertedamt = Convert.ToDouble(textBox1.Text);<br>
+          if (comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "USD")<br>
+          {<br>
+       Double a = convertedamt / 74;<br>
+        label4.Text = a + "$";<br>
+   }<br>
+ else if (comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "SAR")<br>
+ {<br>
+     Double a = convertedamt / 17;<br>
+      label4.Text = a + "SAR";<br>
+        }<br>
+      else if (comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "EUR")<br>
+       {<br>
 
+          Double a = convertedamt / 11;<br>
+            label4.Text = a + "EUR";   }<br>
+              else<br>
+                {<br>
+           label4.Text = "Please Enter the conversion code";<br>
+            }<br>
+             }<br>
+         }<br>
+        }<br>
         private void button2_Click(object sender, EventArgs e)<br>
         {<br>
             textBox1.Text = "";<br>
